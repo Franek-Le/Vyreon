@@ -38,7 +38,12 @@ impl Lexer {
                 ';' => TokenType::SEMICOLON,
                 ':' => TokenType::COLON,
                 '!' => TokenType::NOT,
-                _ => continue,
+                _ => {
+                    if (current.to_string().parse::<f64>().is_ok()) {
+                        let num: string = ""
+                        
+                    }
+                },
             };
             result.push(Token {
                 r#type: token_type,
