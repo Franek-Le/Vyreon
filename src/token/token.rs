@@ -58,6 +58,7 @@ pub enum TokenType {
 	IMPORT,
 	FROM,
 	FUNCTION,
+  RETURN,
 	IF,
 	ELSE,
 	FOREACH,
@@ -66,6 +67,9 @@ pub enum TokenType {
 	EXPORT,
 	TYPEOF,
 	IN,
+  STRUCT,
+  INTERFACE,
+  ENUM,
 }
 
 #[allow(dead_code)]
